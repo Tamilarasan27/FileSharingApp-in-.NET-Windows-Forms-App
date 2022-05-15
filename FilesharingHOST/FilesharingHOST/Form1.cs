@@ -92,7 +92,7 @@ namespace FilesharingHOST
             btn_START.Enabled = false;
             label1.Text = "Client";
             client = new TcpClient();
-            client.Connect("192.168.137.1", 8888);
+            client.Connect("127.0.0.1", 8888);
             ns = client.GetStream();
             filerec = new FileRec(@"Transfer\");
             timer2.Start();
